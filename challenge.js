@@ -30,3 +30,13 @@ function reverseWord(str){
   return str.split('').reverse('').join('')
  }
  console.log(reverseWord('world'))
+
+//challenge 2
+
+const mergedArray = (arr1, arr2) => {
+return arr1
+  .filter(item=>!arr2.includes(item))
+  .concat(arr2)
+  .sort()
+ }
+console.log(mergedArray([1,2,3,4], [4,5,6,7,8,3]))
